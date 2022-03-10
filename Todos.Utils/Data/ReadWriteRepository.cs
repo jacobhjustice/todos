@@ -1,27 +1,27 @@
 using Microsoft.EntityFrameworkCore;
+using Todos.Utils.Query;
 
-namespace todos.common.Data;
-
+namespace Todos.Utils.Data;
 public abstract class ReadWriteRepository<T>: IReadOnlyRepository<T>, IWriteOnlyRepository<T> where T: class, IDataRecord
 {
-    private readonly DbContext Context;
-    private DbSet<T> Data => this.Context.Set<T>();
+    private readonly DbContext _context;
+    private DbSet<T> _data => this._context.Set<T>();
 
     public ReadWriteRepository(DbContext context)
     {
-        this.Context = context;
+        this._context = context;
     }
 
     public T Add(T recordToAdd)
     {
         recordToAdd.CreatedAt = DateTime.Now;
-        this.Data.Add(recordToAdd);
+        this._data.Add(recordToAdd);
         return recordToAdd;
     }
 
     public T Update(T recordToUpdate)
     {
-        this.Data.Update(recordToUpdate);
+        this._data.Update(recordToUpdate);
         return recordToUpdate;
     }
     
@@ -34,13 +34,13 @@ public abstract class ReadWriteRepository<T>: IReadOnlyRepository<T>, IWriteOnly
         }
         
         entity.ArchivedAt = DateTime.Now;
-        this.Data.Update(entity);
+        this._data.Update(entity);
         return entity;
     }
     
     public T? Get(int id, bool includeArchived)
     {
-        return this.Data.FirstOrDefault(x => x.Id == id && (x.ArchivedAt == null || includeArchived));
+        return this._data.FirstOrDefault(x => x.Id == id && (x.ArchivedAt == null || includeArchived));
     }
     
     // Note: If you want to provide entity-specific filtering,
@@ -49,7 +49,7 @@ public abstract class ReadWriteRepository<T>: IReadOnlyRepository<T>, IWriteOnly
     // and do not materialize the queryable until you are ready to apply all filters
     public virtual IQueryable<T> GetAll(IQueryOptions? options)
     {
-        var query = this.Data.AsQueryable();
+        var query = this._data.AsQueryable();
         if (options != null)
         {
             if (options.Limit.HasValue)
@@ -87,10 +87,10 @@ public abstract class ReadWriteRepository<T>: IReadOnlyRepository<T>, IWriteOnly
     
     public virtual RepositoryTransaction BeginDatabaseTransaction()
     {
-        var t = this.Context.Database.CurrentTransaction;
+        var t = this._context.Database.CurrentTransaction;
         if (t == null)
         {
-            return new RepositoryTransaction(this.Context.Database.BeginTransaction(), true);
+            return new RepositoryTransaction(this._context.Database.BeginTransaction(), true);
         }
 
         return new RepositoryTransaction(t, false);
@@ -100,7 +100,7 @@ public abstract class ReadWriteRepository<T>: IReadOnlyRepository<T>, IWriteOnly
     
     public int Commit()
     {
-        return this.Context.SaveChanges();
+        return this._context.SaveChanges();
     }
 
 }

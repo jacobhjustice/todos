@@ -4,10 +4,7 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>todos.api.handlers</RootNamespace>
     </PropertyGroup>
-
-    <ItemGroup>
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.3" />
-    </ItemGroup>
 
 </Project>

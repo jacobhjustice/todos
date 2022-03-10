@@ -1,5 +1,4 @@
-namespace todos.common.Data;
-
+namespace Todos.Utils.Data;
 public interface IWriteOnlyRepository<T> where T : class, IDataRecord
 {
         T Add(T recordToAdd);

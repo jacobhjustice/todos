@@ -8,7 +8,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="" />
+    <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos-example.sln" beforeDir="false" afterPath="$PROJECT_DIR$/todos-example.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.api.handlers/todos.api.handlers.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Handlers/Todos.API.Handlers.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.api/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.api/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Controllers/WeatherForecastController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.api/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.api/WeatherForecast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/WeatherForecast.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.api/todos.api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Todos.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.common/Data/IDataRecord.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils/Data/IDataRecord.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.common/Data/IReadOnlyRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils/Data/IReadOnlyRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.common/Data/IWriteOnlyRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils/Data/IWriteOnlyRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.common/Data/ReadWriteRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.common/Data/RepositoryTransaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils/Data/RepositoryTransaction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.common/Query/IQueryOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils/Query/IQueryOptions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.common/todos.common.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Models/Todos.Models.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.dtos/todos.dtos.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.DTOs/Todos.DTOs.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.models/Data/TodoItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Models/Entities/TodoItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.models/Data/TodoList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Models/Entities/TodoList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.models/TodoContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Models/TodoContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.models/todos.models.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils/Todos.Utils.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.repositories/TodoItemRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Repositories/TodoItemRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.repositories/TodoListRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Repositories/TodoListRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.repositories/todos.repositories.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Repositories/Todos.Repositories.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos.validations/todos.validations.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Validations/Todos.Validations.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +49,21 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/160fab9af68a45319256f7e5e48f811f357e00/99/409ab65b/IDataRecord.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9d4f4ac7db6d2c5d183ab2d92602280ed4349fd6e6a1b6313546b3d01fdab5/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Todos.Repositories/TodoListRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Todos.Repositories/TodoItemRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Todos.Models/Entities/TodoList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Todos.Models/Entities/TodoItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Todos.Models/TodoContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2f10f2a1f3bbdbc3696823de50e6726ba2ae7f8cf2e6dfc487a9c0b8c1f7b4/ConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/IDataRecord.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/IReadOnlyRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/IWriteOnlyRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/RepositoryTransaction.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -43,9 +86,9 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.todos-example: IIS Express">
+  <component name="RunManager" selected=".NET Launch Settings Profile.todos-example: todos_example">
     <configuration name="todos-example: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/todos.api/todos.api.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Todos.API/Todos.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
       <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -60,7 +103,7 @@
       </method>
     </configuration>
     <configuration name="todos-example: todos_example" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/todos.api/todos.api.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Todos.API/Todos.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
       <option name="LAUNCH_PROFILE_NAME" value="todos_example" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -83,7 +126,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646783439692</updated>
-      <workItem from="1646783445741" duration="5446000" />
+      <workItem from="1646783445741" duration="7464000" />
     </task>
     <servers />
   </component>

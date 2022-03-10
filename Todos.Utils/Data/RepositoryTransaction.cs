@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace todos.common.Data;
+namespace Todos.Utils.Data;
 
 public class RepositoryTransaction: IDisposable
 {

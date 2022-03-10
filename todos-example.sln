@@ -1,18 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todos.api", "todos.api\todos.api.csproj", "{E5434334-55E4-44A1-BFDC-328548E90340}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.API", "Todos.API\Todos.API.csproj", "{E5434334-55E4-44A1-BFDC-328548E90340}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todos.models", "todos.models\todos.models.csproj", "{BD20605F-7A21-4DF7-AA0A-D4707A8EDB10}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.Models", "Todos.Models\Todos.Models.csproj", "{BD20605F-7A21-4DF7-AA0A-D4707A8EDB10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todos.validations", "todos.validations\todos.validations.csproj", "{EAAFAFB4-65DE-416D-9E9F-A97BDB54FD7C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.Validations", "Todos.Validations\Todos.Validations.csproj", "{EAAFAFB4-65DE-416D-9E9F-A97BDB54FD7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todos.dtos", "todos.dtos\todos.dtos.csproj", "{004113FA-423C-489F-84D2-FF408A2460B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.DTOs", "Todos.DTOs\Todos.DTOs.csproj", "{004113FA-423C-489F-84D2-FF408A2460B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todos.repositories", "todos.repositories\todos.repositories.csproj", "{4BB6EA73-B217-4D59-B4C4-A3F305A9125F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.Repositories", "Todos.Repositories\Todos.Repositories.csproj", "{4BB6EA73-B217-4D59-B4C4-A3F305A9125F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todos.api.handlers", "todos.api.handlers\todos.api.handlers.csproj", "{B44C4B03-2040-41A8-B3FE-AE97D836882B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.API.Handlers", "Todos.API.Handlers\Todos.API.Handlers.csproj", "{B44C4B03-2040-41A8-B3FE-AE97D836882B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todos.common", "todos.common\todos.common.csproj", "{B063D4E4-3EBB-4B04-A7D1-F4ADE10C67C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.Utils", "Todos.Utils\Todos.Utils.csproj", "{B063D4E4-3EBB-4B04-A7D1-F4ADE10C67C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

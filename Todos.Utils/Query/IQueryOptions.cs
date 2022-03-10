@@ -1,4 +1,4 @@
-namespace todos.common.Data;
+namespace Todos.Utils.Query;
 
 public interface IQueryOptions
 {
