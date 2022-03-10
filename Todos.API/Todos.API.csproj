@@ -14,6 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Todos.API.Logic\Todos.API.Logic.csproj" />
       <ProjectReference Include="..\Todos.DTOs\Todos.DTOs.csproj" />
       <ProjectReference Include="..\Todos.Models\Todos.Models.csproj" />
       <ProjectReference Include="..\Todos.Repositories\Todos.Repositories.csproj" />

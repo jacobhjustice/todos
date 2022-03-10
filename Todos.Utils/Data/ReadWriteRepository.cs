@@ -47,7 +47,7 @@ public class ReadWriteRepository<T>: IReadOnlyRepository<T>, IWriteOnlyRepositor
     // override this call in child with some child of IQueryOptions.
     // If you do this, be sure to call the base function to leverage the existing query options
     // and do not materialize the queryable until you are ready to apply all filters
-    public virtual IQueryable<T> GetAll(IQueryOptions? options)
+    public virtual IQueryable<T> GetAll(QueryOptions? options)
     {
         var query = this._data.AsQueryable();
         if (options != null)

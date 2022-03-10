@@ -8,6 +8,6 @@ public interface IHandler<T, R> where T : class, IDataRecord where R : class
     T Create(R req);
     T Update(R req, int id);
     T Archive(int id);
-    IList<T> Get(IQueryOptions options);
+    IList<T> Get(QueryOptions options);
     T Get(int id);
 }

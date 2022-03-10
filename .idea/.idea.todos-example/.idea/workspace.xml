@@ -10,13 +10,8 @@
   <component name="ChangeListManager">
     <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API.Handlers/Todos.API.Handlers.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic/Todos.API.Logic.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todos.API/Todos.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Todos.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.DTOs/Todos.DTOs.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.DTOs/Todos.DTOs.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todos-example.sln" beforeDir="false" afterPath="$PROJECT_DIR$/todos-example.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +164,7 @@
       <workItem from="1646783445741" duration="8813000" />
       <workItem from="1646874448899" duration="1113000" />
       <workItem from="1646875574631" duration="1012000" />
-      <workItem from="1646876945802" duration="5452000" />
+      <workItem from="1646876945802" duration="6747000" />
     </task>
     <servers />
   </component>

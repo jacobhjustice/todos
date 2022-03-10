@@ -42,7 +42,7 @@ public class TodoListController : ControllerBase
     }
     
     [HttpGet("")]
-    public async Task<IActionResult> Get([FromQuery] IQueryOptions query)
+    public async Task<IActionResult> Get([FromQuery] QueryOptions query)
     {
         try
         {

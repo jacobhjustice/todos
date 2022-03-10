@@ -4,5 +4,5 @@ namespace Todos.Utils.Data;
 public interface IReadOnlyRepository<T> where T : class, IDataRecord
 {
     T? Get(int id, bool includeArchived);
-    IQueryable<T> GetAll(IQueryOptions? options);
+    IQueryable<T> GetAll(QueryOptions? options);
 }

@@ -63,7 +63,7 @@ public class TodoListHandler : IHandler<TodoList, TodoListRequest>
         return list;
     }
     
-    public IList<TodoList> Get(IQueryOptions options)
+    public IList<TodoList> Get(QueryOptions options)
     {
         var lists = this._todoListReadRepository.GetAll(options);
         return lists.ToList();
