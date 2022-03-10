@@ -8,13 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todos-example.sln" beforeDir="false" afterPath="$PROJECT_DIR$/todos-example.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todos.api/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todos.dto/todos.dto.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/todos.dtos/todos.dtos.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todos.validation/todos.validation.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/todos.validations/todos.validations.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646783439692</updated>
-      <workItem from="1646783445741" duration="4496000" />
+      <workItem from="1646783445741" duration="5446000" />
     </task>
     <servers />
   </component>
