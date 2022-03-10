@@ -8,4 +8,5 @@ public class TodoList: IDataRecord
     public DateTime CreatedAt { get; set; }
     public DateTime? ArchivedAt { get; set; }
     public virtual IList<TodoItem> TodoItems { get; set; }
+    public string Label { get; set; }
 }

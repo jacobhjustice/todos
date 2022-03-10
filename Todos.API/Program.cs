@@ -16,6 +16,7 @@ builder.Services.AddTransient<IReadOnlyRepository<TodoItem>, TodoItemRepository>
 builder.Services.AddTransient<IWriteOnlyRepository<TodoItem>, TodoItemRepository>();
 builder.Services.AddTransient<IReadOnlyRepository<TodoList>, TodoListRepository>();
 builder.Services.AddTransient<IWriteOnlyRepository<TodoList>, TodoListRepository>();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
