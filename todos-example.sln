@@ -10,7 +10,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.DTOs", "Todos.DTOs\To
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.Repositories", "Todos.Repositories\Todos.Repositories.csproj", "{4BB6EA73-B217-4D59-B4C4-A3F305A9125F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.API.Handlers", "Todos.API.Handlers\Todos.API.Handlers.csproj", "{B44C4B03-2040-41A8-B3FE-AE97D836882B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.API.Logic", "Todos.API.Logic\Todos.API.Logic.csproj", "{B44C4B03-2040-41A8-B3FE-AE97D836882B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.Utils", "Todos.Utils\Todos.Utils.csproj", "{B063D4E4-3EBB-4B04-A7D1-F4ADE10C67C6}"
 EndProject

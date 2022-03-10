@@ -7,4 +7,20 @@
         <RootNamespace>todos.dto</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Compile Remove="ViewModels\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="ViewModels\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="ViewModels\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Todos.Models\Todos.Models.csproj" />
+    </ItemGroup>
+
 </Project>

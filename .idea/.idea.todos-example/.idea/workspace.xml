@@ -9,14 +9,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.Models/TodoContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Models/TodoContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API.Handlers/Todos.API.Handlers.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic/Todos.API.Logic.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API/Todos.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Todos.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.DTOs/Todos.DTOs.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.DTOs/Todos.DTOs.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos-example.sln" beforeDir="false" afterPath="$PROJECT_DIR$/todos-example.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +47,7 @@
     <setting file="file://$PROJECT_DIR$/Todos.API/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/RepositoryTransaction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5330988bfaacf93f15e30f9b3dd6018a768f89da3b38d874fda77299c62164/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Todos.API/Controllers/WeatherForecastController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/de1dc94e26de2eb8cdb9b19e9451c6a0738025b875978dc863de7ba87ee78c4/ServiceCollectionServiceExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Models/TodoContextFactory.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -169,7 +169,7 @@
       <workItem from="1646783445741" duration="8813000" />
       <workItem from="1646874448899" duration="1113000" />
       <workItem from="1646875574631" duration="1012000" />
-      <workItem from="1646876945802" duration="2498000" />
+      <workItem from="1646876945802" duration="5452000" />
     </task>
     <servers />
   </component>

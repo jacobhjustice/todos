@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Todos.Utils.Query;
 
 namespace Todos.Utils.Data;
-public abstract class ReadWriteRepository<T>: IReadOnlyRepository<T>, IWriteOnlyRepository<T> where T: class, IDataRecord
+public class ReadWriteRepository<T>: IReadOnlyRepository<T>, IWriteOnlyRepository<T> where T: class, IDataRecord
 {
     private readonly DbContext _context;
     private DbSet<T> _data => this._context.Set<T>();
