@@ -1,4 +1,4 @@
-# Command to start the environment: 
+# Commands to start the environment: 
 # docker-compose down  --remove-orphans
 # docker-compose up --build -d
 
@@ -22,13 +22,11 @@ services:
       - sql
     build:
       context: .
-      dockerfile: ./todos.api/Dockerfile
-      args:
-        - TARGET_RUNTIME=${TARGET_RUNTIME}
+      dockerfile: ./Dockerfile
     ports:
-      - "5000:5000"
+      - "53324:53324"
     environment:
       - ASPNETCORE_ENVIRONMENT=Local
       - ConnectionStrings:Database=Server=sql;Database=Todos;User Id=SA;Password=PASS-WORD_123;
       
-    entrypoint: bash -c "sleep 10 && dotnet todos.api.dll"
+    entrypoint: bash -c "sleep 10 && dotnet Todos.API.dll"

@@ -11,8 +11,14 @@ public class TodoContext : DbContext
 
     public TodoContext(string connString) : base(GetOptions(connString))
     {
+        this.RunMigrations();
     }
 
+    // For local testing purposes only
+    private void RunMigrations()
+    {
+        this.Database.Migrate();
+    }
 
 
     private static DbContextOptions GetOptions(string connectionString)
@@ -24,6 +30,7 @@ public class TodoContext : DbContext
     public TodoContext(DbContextOptions<TodoContext> options)
         : base(options)
     {
+        this.RunMigrations();
     }
 
     // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

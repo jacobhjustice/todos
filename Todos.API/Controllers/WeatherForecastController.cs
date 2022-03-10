@@ -1,9 +1,12 @@
+using Microsoft.AspNetCore.Components.Routing;
 using Microsoft.AspNetCore.Mvc;
+using Todos.Models.Entities;
+using Todos.Utils.Data;
 
 namespace todos_example.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("merp")]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
@@ -13,12 +16,13 @@ public class WeatherForecastController : ControllerBase
 
     private readonly ILogger<WeatherForecastController> _logger;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public WeatherForecastController(ILogger<WeatherForecastController> logger, IWriteOnlyRepository<TodoList> repository)
     {
         _logger = logger;
+        Console.WriteLine("Derp");
     }
 
-    [HttpGet(Name = "GetWeatherForecast")]
+    [HttpGet("")]
     public IEnumerable<WeatherForecast> Get()
     {
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
