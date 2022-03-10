@@ -10,11 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.Models/Entities/TodoItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Models/Entities/TodoItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.Models/Entities/TodoList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Models/Entities/TodoList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Models/TodoContextFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Models/TodoContextFactory.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +46,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectId" id="267nLe9mrwMnkWGV7PXFGaviPYZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -162,7 +161,7 @@
       <updated>1646783439692</updated>
       <workItem from="1646783445741" duration="8813000" />
       <workItem from="1646874448899" duration="1113000" />
-      <workItem from="1646875574631" duration="655000" />
+      <workItem from="1646875574631" duration="1012000" />
     </task>
     <servers />
   </component>

@@ -46,7 +46,9 @@ public class TodoContext : DbContext
         modelBuilder.Entity<TodoItem>()
             .HasOne(x => x.TodoList)
             .WithMany(x => x.TodoItems)
-            .HasForeignKey(x => x.TodoListId);
+            .HasForeignKey(x => x.TodoListId)
+            .IsRequired()
+            .OnDelete(DeleteBehavior.Restrict);
     }
 
 }
