@@ -9,6 +9,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="FluentValidation" Version="10.3.6" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.3" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     </ItemGroup>
@@ -18,6 +19,7 @@
       <ProjectReference Include="..\Todos.DTOs\Todos.DTOs.csproj" />
       <ProjectReference Include="..\Todos.Models\Todos.Models.csproj" />
       <ProjectReference Include="..\Todos.Repositories\Todos.Repositories.csproj" />
+      <ProjectReference Include="..\Todos.Validations\Todos.Validations.csproj" />
     </ItemGroup>
 
 </Project>

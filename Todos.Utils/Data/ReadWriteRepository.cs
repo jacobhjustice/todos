@@ -72,9 +72,18 @@ public class ReadWriteRepository<T>: IReadOnlyRepository<T>, IWriteOnlyRepositor
                     throw new Exception($"entity of type {typeof(T)} does not have property {options.Order}");
                 }
 
-                query = query
-                    .OrderBy(s => s.GetType().GetProperty(options.Order).GetValue(s))
-                    .AsQueryable();
+                if (options.IsDescending)
+                {
+                    query = query
+                        .OrderByDescending(s => s.GetType().GetProperty(options.Order).GetValue(s))
+                        .AsQueryable();
+                }
+                else
+                {
+                    query = query
+                        .OrderBy(s => s.GetType().GetProperty(options.Order).GetValue(s))
+                        .AsQueryable();
+                }
             }
 
             query = query

@@ -7,4 +7,13 @@
         <RootNamespace>todos.validation</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="10.3.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Todos.Models\Todos.Models.csproj" />
+      <ProjectReference Include="..\Todos.Repositories\Todos.Repositories.csproj" />
+    </ItemGroup>
+
 </Project>

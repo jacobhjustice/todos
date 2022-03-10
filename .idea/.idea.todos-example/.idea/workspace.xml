@@ -9,9 +9,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Todos.Utils/Validation/Rulesets.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Todos.Validations/TodoListValidator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API.Logic/Todos.API.Logic.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic/Todos.API.Logic.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todos.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todos.API/Todos.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Todos.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Repositories/TodoListRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Repositories/TodoListRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Validations/Todos.Validations.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Validations/Todos.Validations.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +42,11 @@
     <setting file="file://$PROJECT_DIR$/Todos.Models/Entities/TodoItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Models/TodoContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2f10f2a1f3bbdbc3696823de50e6726ba2ae7f8cf2e6dfc487a9c0b8c1f7b4/ConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ff3d340dc6524db7911435741c9784826c200/a9/916fb001/DefaultValidatorExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/IDataRecord.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/IReadOnlyRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ff3d340dc6524db7911435741c9784826c200/71/e9c1968a/ValidationStrategy`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/IWriteOnlyRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.API/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/RepositoryTransaction.cs" root0="FORCE_HIGHLIGHTING" />
@@ -164,7 +173,7 @@
       <workItem from="1646783445741" duration="8813000" />
       <workItem from="1646874448899" duration="1113000" />
       <workItem from="1646875574631" duration="1012000" />
-      <workItem from="1646876945802" duration="6747000" />
+      <workItem from="1646876945802" duration="8699000" />
     </task>
     <servers />
   </component>
@@ -192,6 +201,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs</url>
+          <line>48</line>
+          <properties documentPath="$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs" initialLine="48" containingFunctionPresentation="method 'Get'">
+            <startOffsets>
+              <option value="1397" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1436" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
