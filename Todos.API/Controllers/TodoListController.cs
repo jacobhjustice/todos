@@ -14,11 +14,9 @@ namespace Todos.API.Controllers;
 [Route("todos/lists")]
 public class TodoListController : ControllerBase
 {
-    private readonly ILogger<TodoListController> _logger;
     private readonly IHandler<TodoList, TodoListRequest> _handler;
-    public TodoListController(ILogger<TodoListController> logger, IHandler<TodoList, TodoListRequest> handler)
+    public TodoListController(IHandler<TodoList, TodoListRequest> handler)
     {
-        this._logger = logger;
         this._handler = handler;
     }
 
@@ -29,7 +27,7 @@ public class TodoListController : ControllerBase
         {
             var result = this._handler.Create(req);
             var ret = new TodoListResponse(result);
-            return new JsonResult(ret);
+            return StatusCode(StatusCodes.Status201Created, new JsonResult(ret));
         }
         catch (ArgumentNullException e)
         {
@@ -47,8 +45,8 @@ public class TodoListController : ControllerBase
         try
         {
             var results = this._handler.Get(query);
-            var ret = results.Select(x => new TodoListResponse(x));
-            return new JsonResult(ret);
+            var ret = results.Select(x => new TodoListResponse(x)).ToList();
+            return StatusCode(StatusCodes.Status200OK,  new JsonResult(ret));
         }
         catch (ArgumentNullException e)
         {
@@ -67,7 +65,7 @@ public class TodoListController : ControllerBase
         {
             var results = this._handler.Get(id, includeArchived);
             var ret = new TodoListResponse(results);
-            return new JsonResult(ret);
+            return StatusCode(StatusCodes.Status200OK, new JsonResult(ret));
         }
         catch (Exception e)
         {
@@ -76,13 +74,13 @@ public class TodoListController : ControllerBase
     }
     
     [HttpDelete("{id}")]
-    public async Task<IActionResult> Get([FromRoute] int id)
+    public async Task<IActionResult> Archive([FromRoute] int id)
     {
         try
         {
             var results = this._handler.Archive(id);
             var ret = new TodoListResponse(results);
-            return new JsonResult(ret);
+            return StatusCode(StatusCodes.Status202Accepted,new JsonResult(ret));
         }
         catch (Exception e)
         {
@@ -97,7 +95,7 @@ public class TodoListController : ControllerBase
         {
             var results = this._handler.Update(req, id);
             var ret = new TodoListResponse(results);
-            return new JsonResult(ret);
+            return StatusCode(StatusCodes.Status200OK, new JsonResult(ret));
         }
         catch (Exception e)
         {

@@ -9,10 +9,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Todos.API.Logic.Tests/Handlers/TodoListHandlerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic.Tests/Handlers/TodoListHandlerTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.Validations.Tests/TodoListValidatorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Validations.Tests/TodoListValidatorTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.Validations/TodoListValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Validations/TodoListValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API.Tests/Todos.API.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Tests/Todos.API.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API.Tests/UnitTest1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos-example.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/todos-example.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +44,13 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ff3d340dc6524db7911435741c9784826c200/35/6914619a/ValidationResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/RepositoryTransaction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5330988bfaacf93f15e30f9b3dd6018a768f89da3b38d874fda77299c62164/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ef12ac607ddb486f883fb522e8f1daef46c00/6a/3f63526e/CastleProxyFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6b2e01ddb5164c67b011970cb002de3394000/a9/9760509b/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ff3d340dc6524db7911435741c9784826c200/c0/492cef90/ValidationContext`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/de1dc94e26de2eb8cdb9b19e9451c6a0738025b875978dc863de7ba87ee78c4/ServiceCollectionServiceExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bad27a288fa986391ec44df5a9f7ae9f182e72d3b84127749f8ad88ffadf423/EntityGraphAttacher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/377b61b613ea444f826f377d9474ffca3c9a8/a4/539e9dd8/ExecutionTimer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Repositories/TodoListRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Repositories/TodoItemRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Models/Entities/TodoList.cs" root0="FORCE_HIGHLIGHTING" />
@@ -71,7 +74,6 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="XThreadsFramesViewSplitterKey" value="0.4502924" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="yaml" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -173,7 +175,7 @@
       <workItem from="1646783445741" duration="8813000" />
       <workItem from="1646874448899" duration="1113000" />
       <workItem from="1646875574631" duration="1012000" />
-      <workItem from="1646876945802" duration="23537000" />
+      <workItem from="1646876945802" duration="26535000" />
     </task>
     <servers />
   </component>
@@ -201,19 +203,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs</url>
-          <line>48</line>
-          <properties documentPath="$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs" initialLine="48" containingFunctionPresentation="method 'Get'">
-            <startOffsets>
-              <option value="1397" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1436" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs</url>
@@ -307,6 +296,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Todos.API.Tests/Controllers/TodoListControllerTests.cs</url>
+          <line>161</line>
+          <properties documentPath="$PROJECT_DIR$/Todos.API.Tests/Controllers/TodoListControllerTests.cs" initialLine="80" containingFunctionPresentation="method 'Get_Success'">
+            <startOffsets>
+              <option value="5048" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5100" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <breakpoint enabled="true" type="DotNet Exception Breakpoints">
           <properties exception="System.NotSupportedException" isInternal="false" displayValue="NotSupportedException" namespaceName="System">
