@@ -23,8 +23,8 @@ public class TodoListValidator: AbstractValidator<TodoList>
         RuleSet(Rulesets.UPDATE, () =>
         {
             RuleFor(x => x.Id)
-                .Must(this.MustExist)
-                .WithMessage("id must reference an actual TodoList");
+                .Must(this.NotArchived)
+                .WithMessage("TodoList must exist and not be archived");
             
             RuleFor(x => x.Label)
                 .Must(this.NotExist)
@@ -34,12 +34,8 @@ public class TodoListValidator: AbstractValidator<TodoList>
         RuleSet(Rulesets.ARCHIVE, () =>
         {
             RuleFor(x => x.Id)
-                .Must(this.MustExist)
-                .WithMessage("id must reference an actual TodoList");
-            
-            RuleFor(x => x.Id)
                 .Must(this.NotArchived)
-                .WithMessage("cannot archive a TodoList that is already archived");
+                .WithMessage("TodoList must exist and not be archived");
         });
     }
 
@@ -48,13 +44,8 @@ public class TodoListValidator: AbstractValidator<TodoList>
         return this._repository.Get(label) == null;
     }
     
-    public bool MustExist(int id)
-    {
-        return this._repository.Get(id, true) != null;
-    }
-    
     public bool NotArchived(int id)
     {
-        return !this._repository.Get(id, true)?.ArchivedAt.HasValue ?? true;
+        return this._repository.Get(id, false) != null;
     }
 }

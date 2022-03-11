@@ -1,4 +1,9 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5359afa3_002D79b1_002D4cac_002D8e1f_002Db3813e42c967/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TodoListHandlerTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::0975AA2A-9719-4FEC-A354-7C65EE9ADAF2::net6.0::Todos.API.Logic.Tests.Handlers.TodoListHandlerTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9df08100_002D2d96_002D40d0_002Daebf_002D5a8d17e59b43/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Validate_Update_Failure_DuplicateLabel" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::E9F3E262-4294-4E34-BC4E-13E5A3F55BB6::net6.0::Todos.Validations.Tests.TodoListValidatorTests.Validate_Update_Failure_DuplicateLabel&lt;/TestId&gt;
@@ -37,6 +42,12 @@
     &lt;TestId&gt;xUnit::E9F3E262-4294-4E34-BC4E-13E5A3F55BB6::net6.0::Todos.Validations.Tests.TodoListValidatorTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=de64a43e_002D8b2a_002D4347_002D94eb_002Df7d0ce9a0ea8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Validate_Archive_Success_Null" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;Project Location="/Users/jacobjustice/RiderProjects/todos-example/Todos.Validations.Tests" Presentation="&amp;lt;Todos.Validations.Tests&amp;gt;" /&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=de64a43e_002D8b2a_002D4347_002D94eb_002Df7d0ce9a0ea8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Validate_Archive_Success_Null" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;Project Location="/Users/jacobjustice/RiderProjects/todos-example/Todos.Validations.Tests" Presentation="&amp;lt;Todos.Validations.Tests&amp;gt;" /&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;xUnit::0975AA2A-9719-4FEC-A354-7C65EE9ADAF2::net6.0::Todos.API.Logic.Tests.Handlers.TodoListHandlerTests.Update_Success&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::0975AA2A-9719-4FEC-A354-7C65EE9ADAF2::net6.0::Todos.API.Logic.Tests.Handlers.TodoListHandlerTests&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+  &lt;/Or&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

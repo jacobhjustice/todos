@@ -9,16 +9,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API.Logic.Tests/Todos.API.Logic.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic.Tests/Todos.API.Logic.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API.Logic.Tests/UnitTest1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API.Logic.Tests/Handlers/TodoListHandlerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic.Tests/Handlers/TodoListHandlerTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API.Logic/Todos.API.Logic.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic/Todos.API.Logic.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.Models/TodoContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Models/TodoContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.Repositories/ITodoListRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Repositories/IReadOnlyTodoListRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todos.Validations.Tests/TodoListValidatorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Validations.Tests/TodoListValidatorTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todos.Validations/TodoListValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Validations/TodoListValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todos-example.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/todos-example.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +71,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.4502924" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="yaml" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -178,7 +173,7 @@
       <workItem from="1646783445741" duration="8813000" />
       <workItem from="1646874448899" duration="1113000" />
       <workItem from="1646875574631" duration="1012000" />
-      <workItem from="1646876945802" duration="21814000" />
+      <workItem from="1646876945802" duration="23537000" />
     </task>
     <servers />
   </component>
@@ -289,29 +284,29 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Todos.Validations/TodoListValidator.cs</url>
-          <line>47</line>
+          <line>43</line>
           <properties documentPath="$PROJECT_DIR$/Todos.Validations/TodoListValidator.cs" initialLine="47" containingFunctionPresentation="method 'NotExist'">
             <startOffsets>
-              <option value="1410" />
+              <option value="1252" />
             </startOffsets>
             <endOffsets>
-              <option value="1453" />
+              <option value="1295" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Todos.Validations/TodoListValidator.cs</url>
-          <line>52</line>
-          <properties documentPath="$PROJECT_DIR$/Todos.Validations/TodoListValidator.cs" initialLine="52" containingFunctionPresentation="method 'MustExist'">
+          <url>file://$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs</url>
+          <line>98</line>
+          <properties documentPath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs" initialLine="98" containingFunctionPresentation="method 'Archive'">
             <startOffsets>
-              <option value="1513" />
+              <option value="3198" />
             </startOffsets>
             <endOffsets>
-              <option value="1559" />
+              <option value="3247" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <breakpoint enabled="true" type="DotNet Exception Breakpoints">
           <properties exception="System.NotSupportedException" isInternal="false" displayValue="NotSupportedException" namespaceName="System">

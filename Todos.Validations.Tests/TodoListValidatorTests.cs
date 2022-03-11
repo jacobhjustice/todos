@@ -86,7 +86,7 @@ public class TodoListValidatorTests
         
         Assert.False(result.IsValid);
         Assert.InRange(result.Errors.Count, 1, 1);
-        Assert.Equal("id must reference an actual TodoList", result.Errors[0].ErrorMessage);
+        Assert.Equal("TodoList must exist and not be archived", result.Errors[0].ErrorMessage);
         this._repository.Verify(x => x.Get("Blub"), Times.Once());
     }
     
@@ -101,7 +101,6 @@ public class TodoListValidatorTests
         var result = this._validator.Validate(new TodoList{ Label = "Blub", Id = 3}, options => options.IncludeRuleSets(Rulesets.ARCHIVE));
         
         Assert.True(result.IsValid);
-        this._repository.Verify(x => x.Get(3, true));
     }
     
     [Fact]
@@ -115,34 +114,18 @@ public class TodoListValidatorTests
         var result = this._validator.Validate(new TodoList{ Label = "Blub", Id = 3}, options => options.IncludeRuleSets(Rulesets.ARCHIVE));
         
         Assert.True(result.IsValid);
-        this._repository.Verify(x => x.Get(3, true));
     }
     
     [Fact]
     public void Validate_Archive_Failure_AlreadyArchived()
     {
         this._repository.Setup(x => x.Get(It.IsAny<int>(), It.IsAny<bool>()))
-            .Returns(new TodoList{ArchivedAt = new DateTime()});
-    
-        var result = this._validator.Validate(new TodoList{ Label = "Blub", Id = 3}, options => options.IncludeRuleSets(Rulesets.ARCHIVE));
-
-        Assert.False(result.IsValid);
-        Assert.InRange(result.Errors.Count, 1, 1);
-        Assert.Equal("cannot archive a TodoList that is already archived", result.Errors[0].ErrorMessage);
-        this._repository.Verify(x => x.Get(3, true));
-    }
-    
-    [Fact]
-    public void Validate_Archive_Failure_NotFound()
-    {
-        this._repository.Setup(x => x.Get(It.IsAny<int>(), true))
             .Returns<TodoList>(null);
-
+    
         var result = this._validator.Validate(new TodoList{ Label = "Blub", Id = 3}, options => options.IncludeRuleSets(Rulesets.ARCHIVE));
 
         Assert.False(result.IsValid);
         Assert.InRange(result.Errors.Count, 1, 1);
-        Assert.Equal("id must reference an actual TodoList", result.Errors[0].ErrorMessage);
-        this._repository.Verify(x => x.Get(3, true));
+        Assert.Equal("TodoList must exist and not be archived", result.Errors[0].ErrorMessage);
     }
 }

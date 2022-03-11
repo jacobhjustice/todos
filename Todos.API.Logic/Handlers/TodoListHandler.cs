@@ -85,6 +85,11 @@ public class TodoListHandler : IHandler<TodoList, TodoListRequest>
         var transaction = this._todoListWriteRepository.BeginDatabaseTransaction();
 
         var list = this._todoListReadRepository.Get(id, true);
+        if (list == null)
+        {
+            throw new Exception($"TodoList with id {id} not found");
+        }
+        
         var results = this._validator.Validate(list, options => options.IncludeRuleSets(Rulesets.ARCHIVE));
         if (!results.IsValid)
         {
