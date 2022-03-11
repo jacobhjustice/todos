@@ -9,11 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API.Tests/Todos.API.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Tests/Todos.API.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API.Tests/UnitTest1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todos-example.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/todos-example.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Repositories/TodoItemRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Repositories/TodoItemRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Repositories/Todos.Repositories.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Repositories/Todos.Repositories.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +53,7 @@
     <setting file="file://$PROJECT_DIR$/Todos.Models/Entities/TodoList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Models/Entities/TodoItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Models/TodoContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da7bfdc0748e4c23b7765b6c8583d3a2b55200/68/1126c571/Void.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Models/TodoContextFactory.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -175,7 +173,7 @@
       <workItem from="1646783445741" duration="8813000" />
       <workItem from="1646874448899" duration="1113000" />
       <workItem from="1646875574631" duration="1012000" />
-      <workItem from="1646876945802" duration="26535000" />
+      <workItem from="1646876945802" duration="28147000" />
     </task>
     <servers />
   </component>
