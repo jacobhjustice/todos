@@ -9,16 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Todos.Utils/Validation/Rulesets.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Todos.Validations/TodoListValidator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API.Logic/Todos.API.Logic.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic/Todos.API.Logic.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API/Todos.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Todos.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.Repositories/TodoListRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Repositories/TodoListRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.Validations/Todos.Validations.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Validations/Todos.Validations.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +43,7 @@
     <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/RepositoryTransaction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5330988bfaacf93f15e30f9b3dd6018a768f89da3b38d874fda77299c62164/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6b2e01ddb5164c67b011970cb002de3394000/a9/9760509b/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/de1dc94e26de2eb8cdb9b19e9451c6a0738025b875978dc863de7ba87ee78c4/ServiceCollectionServiceExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Models/TodoContextFactory.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -173,7 +165,7 @@
       <workItem from="1646783445741" duration="8813000" />
       <workItem from="1646874448899" duration="1113000" />
       <workItem from="1646875574631" duration="1012000" />
-      <workItem from="1646876945802" duration="8699000" />
+      <workItem from="1646876945802" duration="10812000" />
     </task>
     <servers />
   </component>
