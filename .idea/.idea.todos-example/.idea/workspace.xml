@@ -35,6 +35,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2f10f2a1f3bbdbc3696823de50e6726ba2ae7f8cf2e6dfc487a9c0b8c1f7b4/ConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ff3d340dc6524db7911435741c9784826c200/a9/916fb001/DefaultValidatorExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8517f607c12a4b508364c3f896f0fe6f11da8/d0/2f518e71/Assert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/IDataRecord.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/IReadOnlyRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ff3d340dc6524db7911435741c9784826c200/71/e9c1968a/ValidationStrategy`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -165,7 +166,7 @@
       <workItem from="1646783445741" duration="8813000" />
       <workItem from="1646874448899" duration="1113000" />
       <workItem from="1646875574631" duration="1012000" />
-      <workItem from="1646876945802" duration="10812000" />
+      <workItem from="1646876945802" duration="12436000" />
     </task>
     <servers />
   </component>
