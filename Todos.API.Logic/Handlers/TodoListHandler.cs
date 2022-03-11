@@ -93,9 +93,9 @@ public class TodoListHandler : IHandler<TodoList, TodoListRequest>
         return lists.ToList();
     }
     
-    public TodoList Get(int id)
+    public TodoList Get(int id, bool includeArchived)
     {
-        var list = this._todoListReadRepository.Get(id, true);
+        var list = this._todoListReadRepository.Get(id, includeArchived);
         return list;
     }
 }

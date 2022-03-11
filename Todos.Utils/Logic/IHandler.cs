@@ -9,5 +9,5 @@ public interface IHandler<T, R> where T : class, IDataRecord where R : class
     T Update(R req, int id);
     T Archive(int id);
     IList<T> Get(QueryOptions options);
-    T Get(int id);
+    T Get(int id, bool includeArchived);
 }

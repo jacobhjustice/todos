@@ -59,4 +59,49 @@ public class TodoListController : ControllerBase
             return StatusCode(StatusCodes.Status500InternalServerError, e);
         }
     }
+    
+    [HttpGet("{id}")]
+    public async Task<IActionResult> Get([FromRoute] int id, [FromQuery] bool includeArchived)
+    {
+        try
+        {
+            var results = this._handler.Get(id, includeArchived);
+            var ret = new TodoListResponse(results);
+            return new JsonResult(ret);
+        }
+        catch (Exception e)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, e);
+        }
+    }
+    
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Get([FromRoute] int id)
+    {
+        try
+        {
+            var results = this._handler.Archive(id);
+            var ret = new TodoListResponse(results);
+            return new JsonResult(ret);
+        }
+        catch (Exception e)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, e);
+        }
+    }
+    
+    [HttpPatch("{id}")]
+    public async Task<IActionResult> Update([FromRoute] int id, [FromBody] TodoListRequest req)
+    {
+        try
+        {
+            var results = this._handler.Update(req, id);
+            var ret = new TodoListResponse(results);
+            return new JsonResult(ret);
+        }
+        catch (Exception e)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, e);
+        }
+    }
 }

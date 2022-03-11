@@ -9,8 +9,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Todos.Utils.Tests/Data/ReadWriteRepositoryTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils.Tests/Data/ReadWriteRepositoryTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.Utils/Data/RepositoryTransaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils/Data/RepositoryTransaction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Utils/Logic/IHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils/Logic/IHandler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +170,7 @@
       <workItem from="1646783445741" duration="8813000" />
       <workItem from="1646874448899" duration="1113000" />
       <workItem from="1646875574631" duration="1012000" />
-      <workItem from="1646876945802" duration="18548000" />
+      <workItem from="1646876945802" duration="19411000" />
     </task>
     <servers />
   </component>
@@ -238,16 +240,29 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Todos.Utils.Tests/Data/ReadWriteRepositoryTests.cs</url>
-          <line>130</line>
+          <line>131</line>
           <properties documentPath="$PROJECT_DIR$/Todos.Utils.Tests/Data/ReadWriteRepositoryTests.cs" initialLine="128" containingFunctionPresentation="method 'Update'">
             <startOffsets>
-              <option value="4228" />
+              <option value="4348" />
             </startOffsets>
             <endOffsets>
-              <option value="4263" />
+              <option value="4383" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs</url>
+          <line>110</line>
+          <properties documentPath="$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" initialLine="110" containingFunctionPresentation="method 'BeginDatabaseTransaction'">
+            <startOffsets>
+              <option value="3439" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3453" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <breakpoint enabled="true" type="DotNet Exception Breakpoints">
           <properties exception="System.NotSupportedException" isInternal="false" displayValue="NotSupportedException" namespaceName="System">
