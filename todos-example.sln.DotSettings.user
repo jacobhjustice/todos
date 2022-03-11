@@ -20,6 +20,11 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5ad7a070_002De411_002D4fd0_002D9ce0_002Df9ea8d614a4b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Update_Success" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::A494F74C-3908-409F-B93E-0DA4314737B5::net6.0::Todos.API.Tests.Controllers.TodoListControllerTests.Update_Success&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A494F74C-3908-409F-B93E-0DA4314737B5::net6.0::Todos.API.Tests.Controllers.TodoItemControllerTests.Post_Success&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A494F74C-3908-409F-B93E-0DA4314737B5::net6.0::Todos.API.Tests.Controllers.TodoItemControllerTests.Update_Success&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A494F74C-3908-409F-B93E-0DA4314737B5::net6.0::Todos.API.Tests.Controllers.TodoItemControllerTests.Archive_Success&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A494F74C-3908-409F-B93E-0DA4314737B5::net6.0::Todos.API.Tests.Controllers.TodoItemControllerTests.Get_Single_Success&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A494F74C-3908-409F-B93E-0DA4314737B5::net6.0::Todos.API.Tests.Controllers.TodoItemControllerTests.Get_Query_Success&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9df08100_002D2d96_002D40d0_002Daebf_002D5a8d17e59b43/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Validate_Update_Failure_DuplicateLabel" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;

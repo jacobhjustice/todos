@@ -1,6 +1,6 @@
 namespace Todos.DTOs.Requests;
 
-public class PostTodoItemRequest
+public class TodoItemRequest
 {
     public string Label { get; set; }
 }
