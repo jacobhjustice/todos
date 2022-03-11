@@ -2,6 +2,7 @@ using FluentValidation;
 using todos.common.Logic;
 using Todos.DTOs.Requests;
 using Todos.Models.Entities;
+using Todos.Repositories;
 using Todos.Utils.Data;
 using Todos.Utils.Query;
 using Todos.Utils.Validation;
@@ -11,10 +12,10 @@ namespace Todos.API.Logic.Handlers;
 public class TodoListHandler : IHandler<TodoList, TodoListRequest>
 {
     private readonly IWriteOnlyRepository<TodoList> _todoListWriteRepository;
-    private readonly IReadOnlyRepository<TodoList> _todoListReadRepository;
+    private readonly IReadOnlyTodoListRepository _todoListReadRepository;
     private readonly IValidator<TodoList> _validator;
 
-    public TodoListHandler(IWriteOnlyRepository<TodoList> todoListWriteRepository, IReadOnlyRepository<TodoList> todoListReadRepository, IValidator<TodoList> validator)
+    public TodoListHandler(IWriteOnlyRepository<TodoList> todoListWriteRepository, IReadOnlyTodoListRepository todoListReadRepository, IValidator<TodoList> validator)
     {
         this._todoListReadRepository = todoListReadRepository;
         this._todoListWriteRepository = todoListWriteRepository;
@@ -27,6 +28,8 @@ public class TodoListHandler : IHandler<TodoList, TodoListRequest>
         {
             throw new ArgumentNullException();
         }
+
+        var transaction = this._todoListWriteRepository.BeginDatabaseTransaction();
 
         var list = new TodoList
         {
@@ -42,6 +45,7 @@ public class TodoListHandler : IHandler<TodoList, TodoListRequest>
         list = this._todoListWriteRepository.Add(list);
         this._todoListWriteRepository.Commit();
 
+        this._todoListWriteRepository.CommitDatabaseTransaction(transaction);
         return list;
     }
     
@@ -51,6 +55,8 @@ public class TodoListHandler : IHandler<TodoList, TodoListRequest>
         {
             throw new ArgumentNullException();
         }
+
+        var transaction = this._todoListWriteRepository.BeginDatabaseTransaction();
 
         var list = this._todoListReadRepository.Get(id, false);
         if (list == null)
@@ -69,11 +75,15 @@ public class TodoListHandler : IHandler<TodoList, TodoListRequest>
         list = this._todoListWriteRepository.Update(list);
         this._todoListWriteRepository.Commit();
 
+        this._todoListWriteRepository.CommitDatabaseTransaction(transaction);
+
         return list;
     }
     
     public TodoList Archive(int id)
     {
+        var transaction = this._todoListWriteRepository.BeginDatabaseTransaction();
+
         var list = this._todoListReadRepository.Get(id, true);
         var results = this._validator.Validate(list, options => options.IncludeRuleSets(Rulesets.ARCHIVE));
         if (!results.IsValid)
@@ -83,6 +93,8 @@ public class TodoListHandler : IHandler<TodoList, TodoListRequest>
         
         list = this._todoListWriteRepository.Archive(id);
         this._todoListWriteRepository.Commit();
+
+        this._todoListWriteRepository.CommitDatabaseTransaction(transaction);
 
         return list;
     }

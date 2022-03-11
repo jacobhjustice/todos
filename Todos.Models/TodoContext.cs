@@ -36,11 +36,6 @@ public class TodoContext : DbContext
         this.RunMigrations();
     }
 
-    // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    //     => optionsBuilder
-    //         .UseLazyLoadingProxies()
-    //         .ConfigureWarnings(warnings => warnings.Ignore(CoreEventId.DetachedLazyLoadingWarning));
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);

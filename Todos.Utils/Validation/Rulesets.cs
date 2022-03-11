@@ -4,5 +4,5 @@ public static class Rulesets
 {
     public const string CREATE = "CREATE";
     public const string UPDATE = "UPDATE";
-    public const string ARCHIVE = "UPDATE";
+    public const string ARCHIVE = "ARCHIVE";
 }

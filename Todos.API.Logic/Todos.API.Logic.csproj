@@ -10,6 +10,7 @@
     <ItemGroup>
       <ProjectReference Include="..\Todos.DTOs\Todos.DTOs.csproj" />
       <ProjectReference Include="..\Todos.Models\Todos.Models.csproj" />
+      <ProjectReference Include="..\Todos.Repositories\Todos.Repositories.csproj" />
       <ProjectReference Include="..\Todos.Utils\Todos.Utils.csproj" />
     </ItemGroup>
 

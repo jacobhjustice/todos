@@ -52,6 +52,8 @@ public class TodoListValidatorTests
         this._repository.Setup(x => x.Get(It.IsAny<string>()))
             .Returns<TodoList>(null);
 
+        this._repository.Setup(x => x.Get(It.IsAny<int>(), It.IsAny<bool>())).Returns(new TodoList());
+        
         var result = this._validator.Validate(new TodoList{ Label = "Blub", Id = 3}, options => options.IncludeRuleSets(Rulesets.UPDATE));
         
         Assert.True(result.IsValid);
@@ -63,6 +65,8 @@ public class TodoListValidatorTests
     {
         this._repository.Setup(x => x.Get(It.IsAny<string>()))
             .Returns(new TodoList());
+        
+        this._repository.Setup(x => x.Get(It.IsAny<int>(), It.IsAny<bool>())).Returns(new TodoList());
 
         var result = this._validator.Validate(new TodoList{ Label = "Blub", Id = 3}, options => options.IncludeRuleSets(Rulesets.UPDATE));
         
@@ -73,11 +77,27 @@ public class TodoListValidatorTests
     }
     
     [Fact]
+    public void Validate_Update_Failure_IdNotFound()
+    {
+        this._repository.Setup(x => x.Get(It.IsAny<string>()))
+            .Returns<TodoList>(null);
+        
+        var result = this._validator.Validate(new TodoList{ Label = "Blub", Id = 3}, options => options.IncludeRuleSets(Rulesets.UPDATE));
+        
+        Assert.False(result.IsValid);
+        Assert.InRange(result.Errors.Count, 1, 1);
+        Assert.Equal("id must reference an actual TodoList", result.Errors[0].ErrorMessage);
+        this._repository.Verify(x => x.Get("Blub"), Times.Once());
+    }
+    
+    [Fact]
     public void Validate_Archive_Success_Null()
     {
         this._repository.Setup(x => x.Get(It.IsAny<int>(), It.IsAny<bool>()))
             .Returns<TodoList>(null);
     
+        this._repository.Setup(x => x.Get(It.IsAny<int>(), It.IsAny<bool>())).Returns(new TodoList());
+        
         var result = this._validator.Validate(new TodoList{ Label = "Blub", Id = 3}, options => options.IncludeRuleSets(Rulesets.ARCHIVE));
         
         Assert.True(result.IsValid);
@@ -90,6 +110,8 @@ public class TodoListValidatorTests
         this._repository.Setup(x => x.Get(It.IsAny<int>(), It.IsAny<bool>()))
             .Returns(new TodoList{ArchivedAt = null});
     
+        this._repository.Setup(x => x.Get(It.IsAny<int>(), It.IsAny<bool>())).Returns(new TodoList());
+
         var result = this._validator.Validate(new TodoList{ Label = "Blub", Id = 3}, options => options.IncludeRuleSets(Rulesets.ARCHIVE));
         
         Assert.True(result.IsValid);
@@ -107,6 +129,20 @@ public class TodoListValidatorTests
         Assert.False(result.IsValid);
         Assert.InRange(result.Errors.Count, 1, 1);
         Assert.Equal("cannot archive a TodoList that is already archived", result.Errors[0].ErrorMessage);
+        this._repository.Verify(x => x.Get(3, true));
+    }
+    
+    [Fact]
+    public void Validate_Archive_Failure_NotFound()
+    {
+        this._repository.Setup(x => x.Get(It.IsAny<int>(), true))
+            .Returns<TodoList>(null);
+
+        var result = this._validator.Validate(new TodoList{ Label = "Blub", Id = 3}, options => options.IncludeRuleSets(Rulesets.ARCHIVE));
+
+        Assert.False(result.IsValid);
+        Assert.InRange(result.Errors.Count, 1, 1);
+        Assert.Equal("id must reference an actual TodoList", result.Errors[0].ErrorMessage);
         this._repository.Verify(x => x.Get(3, true));
     }
 }
