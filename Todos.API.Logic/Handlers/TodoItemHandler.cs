@@ -48,7 +48,25 @@ public class TodoItemHandler : IHandler<TodoItem, TodoItemRequest>
         this._todoItemWriteRepository.CommitDatabaseTransaction(transaction);
         return item;
     }
-    
+
+    public TodoItem Update(CompleteTodoItemRequest req, int id)
+    {
+        if (req == null)
+        {
+            throw new ArgumentNullException();
+        }
+        
+        var transaction = this._todoItemWriteRepository.BeginDatabaseTransaction();
+
+        var item = this._todoItemReadRepository.Get(id, false);
+        if (item == null)
+        {
+            throw new Exception($"TodoItem with id {id} not found");
+        }
+        // TODO
+        throw new Exception("TODO");
+    }
+
     public TodoItem Update(TodoItemRequest req, int id)
     {
         if (req == null)
@@ -61,7 +79,7 @@ public class TodoItemHandler : IHandler<TodoItem, TodoItemRequest>
         var item = this._todoItemReadRepository.Get(id, false);
         if (item == null)
         {
-            throw new Exception($"TodoList with id {id} not found");
+            throw new Exception($"TodoItem with id {id} not found");
         }
         
         item.Label = req.Label;
@@ -87,7 +105,7 @@ public class TodoItemHandler : IHandler<TodoItem, TodoItemRequest>
         var item = this._todoItemReadRepository.Get(id, true);
         if (item == null)
         {
-            throw new Exception($"TodoList with id {id} not found");
+            throw new Exception($"TodoItem with id {id} not found");
         }
         
         var results = this._validator.Validate(item, options => options.IncludeRuleSets(Rulesets.ARCHIVE));
