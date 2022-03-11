@@ -116,7 +116,7 @@ public class ReadWriteRepository<T>: IReadOnlyRepository<T>, IWriteOnlyRepositor
         return new RepositoryTransaction(t, false);
     } 
 
-    public virtual void CommitDatabaseTransaction(RepositoryTransaction transaction) => transaction.Commit();
+    public virtual bool CommitDatabaseTransaction(RepositoryTransaction transaction) => transaction.Commit();
     
     public int Commit()
     {

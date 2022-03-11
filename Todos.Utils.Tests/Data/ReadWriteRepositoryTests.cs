@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using Todos.Utils.Data;
 using Todos.Utils.Query;
 using Xunit;
@@ -38,6 +39,7 @@ public class ReadWriteRepositoryTests
 
 
         var options = new DbContextOptionsBuilder<TestContext>()
+            .ConfigureWarnings(x => x.Ignore(InMemoryEventId.TransactionIgnoredWarning))
             .UseInMemoryDatabase(Guid.NewGuid().ToString())
             .EnableSensitiveDataLogging(true)
             .Options;
@@ -154,4 +156,39 @@ public class ReadWriteRepositoryTests
         Assert.True(result.ArchivedAt > beforeAction);
     }
     
+    [Theory]
+    [InlineData(5, true, true)]
+    [InlineData(5, false, true)]
+    [InlineData(4, true, true)]
+    [InlineData(4, false, false)]
+
+    public void Get(int id, bool includeArchive, bool expectedFound)
+    {
+        var (repo, ctx) = this.SetupData();
+        var result = repo.Get(id, includeArchive);
+        if (expectedFound)
+        {
+            Assert.NotNull(result);
+            Assert.Equal(id, result.Id);
+        }
+        else
+        {
+            Assert.Null(result);
+        }
+    }
+    
+    [Fact]
+    public void Commit()
+    {
+        var (repo, ctx) = this.SetupData();
+        Assert.False(ctx.ChangeTracker.HasChanges());
+        repo.Add(new TestRecord());
+        Assert.True(ctx.ChangeTracker.HasChanges());
+        var id1 = repo.Commit();
+        Assert.False(ctx.ChangeTracker.HasChanges());
+        var id2 = repo.Commit();
+        Assert.NotEqual(id1, id2);
+    }
+    
+    // NOTE: DatabaseTransaction functions are not unit tested due to lack of support for database transactions from in-memory database provider
 }

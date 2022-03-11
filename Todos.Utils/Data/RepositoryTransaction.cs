@@ -6,6 +6,8 @@ public class RepositoryTransaction: IDisposable
 {
     private readonly IDbContextTransaction _transaction;
     private readonly bool _isTopLevel;
+
+    public int Id => this._transaction.GetHashCode();
     
     public RepositoryTransaction(IDbContextTransaction transaction, bool isTopLevel)
     {

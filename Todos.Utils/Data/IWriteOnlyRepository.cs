@@ -5,6 +5,6 @@ public interface IWriteOnlyRepository<T> where T : class, IDataRecord
         T Update(T recordToUpdate);
         T Archive(int id);
         RepositoryTransaction BeginDatabaseTransaction();
-        void CommitDatabaseTransaction(RepositoryTransaction transaction);
+        bool CommitDatabaseTransaction(RepositoryTransaction transaction);
         int Commit();
 }
