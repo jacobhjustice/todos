@@ -17,7 +17,10 @@ public class TodoContext : DbContext
     // For local testing purposes only
     private void RunMigrations()
     {
-        this.Database.Migrate();
+        if (this.Database.ProviderName != "Microsoft.EntityFrameworkCore.InMemory")
+        {
+            this.Database.Migrate();
+        }
     }
 
 
