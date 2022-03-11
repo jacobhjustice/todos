@@ -10,6 +10,12 @@
   <component name="ChangeListManager">
     <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Repositories.Tests/Todos.Repositories.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Repositories.Tests/Todos.Repositories.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Utils.Tests/Todos.Utils.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils.Tests/Todos.Utils.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Utils.Tests/UnitTest1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Utils/Todos.Utils.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils/Todos.Utils.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos-example.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/todos-example.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +42,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ff3d340dc6524db7911435741c9784826c200/a9/916fb001/DefaultValidatorExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8517f607c12a4b508364c3f896f0fe6f11da8/d0/2f518e71/Assert.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2a925edfe5584632978e98fd8509cdf4d7a8/e0/2b15baf0/DataDiscoverer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/IDataRecord.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Todos.Utils/Data/IReadOnlyRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ff3d340dc6524db7911435741c9784826c200/71/e9c1968a/ValidationStrategy`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -64,7 +71,6 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="XThreadsFramesViewSplitterKey" value="0.50097466" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="yaml" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -166,7 +172,7 @@
       <workItem from="1646783445741" duration="8813000" />
       <workItem from="1646874448899" duration="1113000" />
       <workItem from="1646875574631" duration="1012000" />
-      <workItem from="1646876945802" duration="12436000" />
+      <workItem from="1646876945802" duration="17438000" />
     </task>
     <servers />
   </component>
@@ -208,6 +214,38 @@
           </properties>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs</url>
+          <line>62</line>
+          <properties documentPath="$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" initialLine="61" containingFunctionPresentation="method 'GetAll'">
+            <startOffsets>
+              <option value="1905" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2071" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs</url>
+          <line>82</line>
+          <properties documentPath="$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" initialLine="82" containingFunctionPresentation="method 'GetAll'">
+            <startOffsets>
+              <option value="2665" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2706" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="DotNet Exception Breakpoints">
+          <properties exception="System.NotSupportedException" isInternal="false" displayValue="NotSupportedException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

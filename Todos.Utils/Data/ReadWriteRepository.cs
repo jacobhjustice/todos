@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 using Todos.Utils.Query;
 
 namespace Todos.Utils.Data;
@@ -56,7 +57,7 @@ public class ReadWriteRepository<T>: IReadOnlyRepository<T>, IWriteOnlyRepositor
             {
                 if (!options.Offset.HasValue)
                 {
-                    options.Offset = 1;
+                    options.Offset = 0;
                 }
 
                 query = query
@@ -72,17 +73,14 @@ public class ReadWriteRepository<T>: IReadOnlyRepository<T>, IWriteOnlyRepositor
                     throw new Exception($"entity of type {typeof(T)} does not have property {options.Order}");
                 }
 
+                var lambda = (dynamic)CreateOrderExpression(typeof(T), options.Order);
                 if (options.IsDescending)
                 {
-                    query = query
-                        .OrderByDescending(s => s.GetType().GetProperty(options.Order).GetValue(s))
-                        .AsQueryable();
+                    query = Queryable.OrderByDescending(query, lambda);
                 }
                 else
                 {
-                    query = query
-                        .OrderBy(s => s.GetType().GetProperty(options.Order).GetValue(s))
-                        .AsQueryable();
+                    query = Queryable.OrderBy(query, lambda);
                 }
             }
 
@@ -92,6 +90,19 @@ public class ReadWriteRepository<T>: IReadOnlyRepository<T>, IWriteOnlyRepositor
         }
 
         return query;
+    }
+    
+    private static LambdaExpression CreateOrderExpression(Type type, string propertyName)
+    {
+        var param = Expression.Parameter(type, "x");
+
+        Expression body = param;
+        foreach (var member in propertyName.Split('.'))
+        {
+            body = Expression.PropertyOrField(body, member);
+        }
+
+        return Expression.Lambda(body, param);
     }
     
     public virtual RepositoryTransaction BeginDatabaseTransaction()
