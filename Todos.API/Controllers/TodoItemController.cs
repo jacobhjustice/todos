@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Components.Routing;
 using Microsoft.AspNetCore.Mvc;
+using Todos.API.Logic.Handlers;
 using todos.common.Logic;
 using Todos.DTOs.Requests;
 using Todos.DTOs.Responses;
@@ -14,8 +15,8 @@ namespace Todos.API.Controllers;
 [Route("todos/items")]
 public class TodoItemController : ControllerBase
 {
-    private readonly IHandler<TodoItem, TodoItemRequest> _handler;
-    public TodoItemController(IHandler<TodoItem, TodoItemRequest> handler)
+    private readonly ITodoItemHandler _handler;
+    public TodoItemController(ITodoItemHandler handler)
     {
         this._handler = handler;
     }
@@ -90,6 +91,21 @@ public class TodoItemController : ControllerBase
     
     [HttpPatch("{id}")]
     public async Task<IActionResult> Update([FromRoute] int id, [FromBody] TodoItemRequest req)
+    {
+        try
+        {
+            var results = this._handler.Update(req, id);
+            var ret = new TodoItemResponse(results);
+            return StatusCode(StatusCodes.Status200OK, new JsonResult(ret));
+        }
+        catch (Exception e)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, e);
+        }
+    }
+    
+    [HttpPatch("{id}/complete")] // TODO: TEST
+    public async Task<IActionResult> Update([FromRoute] int id, [FromBody] CompleteTodoItemRequest req)
     {
         try
         {

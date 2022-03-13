@@ -10,7 +10,7 @@ using Todos.Validations;
 
 namespace Todos.API.Logic.Handlers;
 
-public class TodoItemHandler : IHandler<TodoItem, TodoItemRequest>
+public class TodoItemHandler : ITodoItemHandler
 {
     private readonly IWriteOnlyRepository<TodoItem> _todoItemWriteRepository;
     private readonly IReadOnlyTodoItemRepository _todoItemReadRepository;

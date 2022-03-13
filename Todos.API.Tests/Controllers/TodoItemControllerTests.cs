@@ -5,6 +5,7 @@ using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Todos.API.Controllers;
+using Todos.API.Logic.Handlers;
 using todos.common.Logic;
 using Todos.DTOs.Requests;
 using Todos.DTOs.Responses;
@@ -18,11 +19,11 @@ namespace Todos.API.Tests.Controllers;
 
 public class TodoItemControllerTests
 {
-    private readonly Mock<IHandler<TodoItem, TodoItemRequest>> _handler;
+    private readonly Mock<ITodoItemHandler> _handler;
 
     public TodoItemControllerTests()
     {
-        this._handler = new Mock<IHandler<TodoItem, TodoItemRequest>>();
+        this._handler = new Mock<ITodoItemHandler>();
     }
     
     private TodoItemController _controller => new TodoItemController(this._handler.Object);
