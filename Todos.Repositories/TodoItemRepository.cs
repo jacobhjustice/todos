@@ -14,12 +14,24 @@ public class TodoItemRepository : ReadWriteRepository<TodoItem>, IReadOnlyTodoIt
     private IQueryable<TodoItem> FilterByTodoListId(IQueryable<TodoItem> query, int todoListId) =>
         query
             .Where(x => x.TodoListId == todoListId);
+    
+    private IQueryable<TodoItem> FilterByTodoCompleted(IQueryable<TodoItem> query, bool isComplete) =>
+        query
+            .Where(x => isComplete ? x.CompletedAt != null : x.CompletedAt == null);
     public IQueryable<TodoItem> GetAll(TodoItemQueryOptions? options)
     {
         var query = base.GetAll(options);
-        if (options.TodoListId.HasValue)
+        if (options != null)
         {
-            query = this.FilterByTodoListId(query, options.TodoListId.Value);
+            if (options.TodoListId.HasValue)
+            {
+                query = this.FilterByTodoListId(query, options.TodoListId.Value);
+            }
+        
+            if (options.Completed.HasValue)
+            {
+                query = this.FilterByTodoCompleted(query, options.Completed.Value);
+            }
         }
 
         return query;

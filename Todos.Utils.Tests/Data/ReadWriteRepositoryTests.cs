@@ -55,22 +55,7 @@ public class ReadWriteRepositoryTests
 
         return (new ReadWriteRepository<TestRecord>(context), context);
     }
-    
-    private static IEnumerable<object[]> GetAll_Data
-    {
-        get
-        {
-            return new[]
-            {
-                new object[]
-                {
-                    new QueryOptions(),
-                    new List<int>{1,2,3,4,5}
-                },
-            };
-        }
-    }
-    
+
     [Theory]
     [InlineData(null, null, null, false, true, new int[] {1,2,3,5,4})]
     [InlineData(2, null, null, false, true, new int[] {1,2})]
@@ -118,6 +103,7 @@ public class ReadWriteRepositoryTests
         var record = new TestRecord();
         var beforeAction = DateTime.Now;
         var result = repo.Add(record);
+        repo.Commit();
         Assert.NotNull(result);
         Assert.InRange(ctx.TestRecords.Count(), 6, 6);
         Assert.Equal(6, result.Id);

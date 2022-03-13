@@ -128,4 +128,17 @@ public class TodoListValidatorTests
         Assert.InRange(result.Errors.Count, 1, 1);
         Assert.Equal("TodoList must exist and not be archived", result.Errors[0].ErrorMessage);
     }
+    
+    [Fact]
+    public void Validate_Failure_EmptyLabel()
+    {
+        this._repository.Setup(x => x.Get(It.IsAny<string>()))
+            .Returns<TodoList>(null);
+
+        var result = this._validator.Validate(new TodoList{ Label = "", Id = 3});
+        
+        Assert.False(result.IsValid);
+        Assert.InRange(result.Errors.Count, 1, 1);
+        Assert.Equal("each TodoList must have a label", result.Errors[0].ErrorMessage);
+    }
 }

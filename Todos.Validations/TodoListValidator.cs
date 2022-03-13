@@ -12,6 +12,10 @@ public class TodoListValidator: AbstractValidator<TodoList>
     public TodoListValidator(IReadOnlyTodoListRepository repository)
     {
         this._repository = repository;
+
+        RuleFor(x => x.Label)
+            .NotEmpty()
+            .WithMessage("each TodoList must have a label");
         
         RuleSet(Rulesets.CREATE, () =>
         {
