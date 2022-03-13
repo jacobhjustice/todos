@@ -10,11 +10,9 @@
   <component name="ChangeListManager">
     <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoItemHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoItemHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.API.Logic/Todos.API.Logic.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic/Todos.API.Logic.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.Utils/Logic/IHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils/Logic/IHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.Validations/Todos.Validations.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Validations/Todos.Validations.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Repositories/IReadOnlyTodoItemRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Repositories/IReadOnlyTodoItemRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Repositories/TodoItemRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Repositories/TodoItemRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Repositories/TodoListRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Repositories/TodoListRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +177,8 @@
       <workItem from="1646875574631" duration="1012000" />
       <workItem from="1646876945802" duration="28147000" />
       <workItem from="1646978059434" duration="3860000" />
-      <workItem from="1647190198657" duration="638000" />
+      <workItem from="1647190198657" duration="2638000" />
+      <workItem from="1647193223905" duration="1048000" />
     </task>
     <servers />
   </component>
@@ -236,13 +235,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Todos.Utils.Tests/Data/ReadWriteRepositoryTests.cs</url>
-          <line>131</line>
+          <line>117</line>
           <properties documentPath="$PROJECT_DIR$/Todos.Utils.Tests/Data/ReadWriteRepositoryTests.cs" initialLine="128" containingFunctionPresentation="method 'Update'">
             <startOffsets>
-              <option value="4348" />
+              <option value="4060" />
             </startOffsets>
             <endOffsets>
-              <option value="4383" />
+              <option value="4095" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="14" />
@@ -277,13 +276,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Todos.Validations/TodoListValidator.cs</url>
-          <line>43</line>
+          <line>47</line>
           <properties documentPath="$PROJECT_DIR$/Todos.Validations/TodoListValidator.cs" initialLine="47" containingFunctionPresentation="method 'NotExist'">
             <startOffsets>
-              <option value="1252" />
+              <option value="1368" />
             </startOffsets>
             <endOffsets>
-              <option value="1295" />
+              <option value="1411" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="17" />
@@ -313,6 +312,32 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Todos.API.Logic.Tests/Handlers/TodoItemHandlerTests.cs</url>
+          <line>211</line>
+          <properties documentPath="$PROJECT_DIR$/Todos.API.Logic.Tests/Handlers/TodoItemHandlerTests.cs" initialLine="211" containingFunctionPresentation="method 'Update_Complete_Success'">
+            <startOffsets>
+              <option value="10491" />
+            </startOffsets>
+            <endOffsets>
+              <option value="10492" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Todos.Validations/TodoItemValidator.cs</url>
+          <line>68</line>
+          <properties documentPath="$PROJECT_DIR$/Todos.Validations/TodoItemValidator.cs" initialLine="68" containingFunctionPresentation="method 'CompletionStateIsNotCurrent'">
+            <startOffsets>
+              <option value="2083" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2098" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <breakpoint enabled="true" type="DotNet Exception Breakpoints">
           <properties exception="System.NotSupportedException" isInternal="false" displayValue="NotSupportedException" namespaceName="System">

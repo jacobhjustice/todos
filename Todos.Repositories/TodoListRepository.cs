@@ -9,9 +9,13 @@ public class TodoListRepository : ReadWriteRepository<TodoList>, IReadOnlyTodoLi
 {
     public TodoListRepository(TodoContext context) : base(context) {}
 
+    private IQueryable<TodoList> FilterByLabel(IQueryable<TodoList> query, string label) =>
+        query
+            .Where(x => x.Label == label);
     public TodoList? Get(string label)
     {
-        return this.GetAll(null)
-            .FirstOrDefault(x => x.Label == label);
+        var query = this.GetAll(null);
+        query = this.FilterByLabel(query, label);
+        return query.FirstOrDefault();
     }
 }

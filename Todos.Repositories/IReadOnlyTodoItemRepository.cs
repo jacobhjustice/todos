@@ -7,4 +7,5 @@ namespace Todos.Repositories;
 public interface IReadOnlyTodoItemRepository: IReadOnlyRepository<TodoItem>
 {
     IQueryable<TodoItem> GetAll(TodoItemQueryOptions? options);
+    TodoItem? Get(string label);
 }

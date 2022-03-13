@@ -18,6 +18,11 @@ public class TodoItemRepository : ReadWriteRepository<TodoItem>, IReadOnlyTodoIt
     private IQueryable<TodoItem> FilterByTodoCompleted(IQueryable<TodoItem> query, bool isComplete) =>
         query
             .Where(x => isComplete ? x.CompletedAt != null : x.CompletedAt == null);
+    
+    private IQueryable<TodoItem> FilterByLabel(IQueryable<TodoItem> query, string label) =>
+        query
+            .Where(x => x.Label == label);
+    
     public IQueryable<TodoItem> GetAll(TodoItemQueryOptions? options)
     {
         var query = base.GetAll(options);
@@ -37,4 +42,10 @@ public class TodoItemRepository : ReadWriteRepository<TodoItem>, IReadOnlyTodoIt
         return query;
     }
     
+    public TodoItem? Get(string label)
+    {
+        var query = this.GetAll(null);
+        query = this.FilterByLabel(query, label);
+        return query.FirstOrDefault();
+    }
 }
