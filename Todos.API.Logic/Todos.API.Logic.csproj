@@ -12,6 +12,7 @@
       <ProjectReference Include="..\Todos.Models\Todos.Models.csproj" />
       <ProjectReference Include="..\Todos.Repositories\Todos.Repositories.csproj" />
       <ProjectReference Include="..\Todos.Utils\Todos.Utils.csproj" />
+      <ProjectReference Include="..\Todos.Validations\Todos.Validations.csproj" />
     </ItemGroup>
 
     <ItemGroup>

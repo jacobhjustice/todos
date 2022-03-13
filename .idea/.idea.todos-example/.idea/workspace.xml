@@ -8,7 +8,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="" />
+    <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoItemHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoItemHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API.Logic/Todos.API.Logic.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic/Todos.API.Logic.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Utils/Logic/IHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Utils/Logic/IHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Validations/Todos.Validations.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Validations/Todos.Validations.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,7 +178,8 @@
       <workItem from="1646874448899" duration="1113000" />
       <workItem from="1646875574631" duration="1012000" />
       <workItem from="1646876945802" duration="28147000" />
-      <workItem from="1646978059434" duration="485000" />
+      <workItem from="1646978059434" duration="3860000" />
+      <workItem from="1647190198657" duration="638000" />
     </task>
     <servers />
   </component>

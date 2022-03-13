@@ -15,6 +15,7 @@
     <ItemGroup>
       <ProjectReference Include="..\Todos.Models\Todos.Models.csproj" />
       <ProjectReference Include="..\Todos.Repositories\Todos.Repositories.csproj" />
+      <ProjectReference Include="..\Todos.Utils.Tests\Todos.Utils.Tests.csproj" />
     </ItemGroup>
 
 </Project>

@@ -6,6 +6,7 @@ using Todos.Repositories;
 using Todos.Utils.Data;
 using Todos.Utils.Query;
 using Todos.Utils.Validation;
+using Todos.Validations;
 
 namespace Todos.API.Logic.Handlers;
 
@@ -63,8 +64,22 @@ public class TodoItemHandler : IHandler<TodoItem, TodoItemRequest>
         {
             throw new Exception($"TodoItem with id {id} not found");
         }
-        // TODO
-        throw new Exception("TODO");
+
+        item.CompletedAt = req.Completed ? DateTime.Now : null;
+        
+        item = this._todoItemWriteRepository.Update(item);
+
+        var results = this._validator.Validate(item, options => options.IncludeRuleSets(TodoItemRulesets.COMPLETE));
+        if (!results.IsValid)
+        {
+            throw new Exception(String.Join(", ", results.Errors.Select(x => x.ErrorMessage)));
+        }
+        
+        this._todoItemWriteRepository.Commit();
+
+        this._todoItemWriteRepository.CommitDatabaseTransaction(transaction);
+
+        return item;
     }
 
     public TodoItem Update(TodoItemRequest req, int id)
@@ -134,7 +149,7 @@ public class TodoItemHandler : IHandler<TodoItem, TodoItemRequest>
         return items.ToList();
     }
     
-    public TodoItem Get(int id, bool includeArchived)
+    public TodoItem? Get(int id, bool includeArchived)
     {
         var item = this._todoItemReadRepository.Get(id, includeArchived);
         return item;
