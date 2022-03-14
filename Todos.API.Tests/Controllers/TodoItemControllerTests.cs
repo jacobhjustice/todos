@@ -98,6 +98,38 @@ public class TodoItemControllerTests
     [InlineData(2, 4,  "blub", true, true)]
     [InlineData(1, 5, "test", false, false)]
     [InlineData(2, 2,  "blub", true, false)]
+    public async void Update_Completed_Success(int id, int listId, string label, bool isArchived, bool isCompleted)
+    {
+        this._handler.Setup(x => x.Update(It.IsAny<CompleteTodoItemRequest>(), 1)).Returns(new TodoItem()
+        {
+            Id = id,
+            Label = label,
+            ArchivedAt = isArchived ? DateTime.Now : null,
+            CompletedAt = isCompleted ? DateTime.Now : null,
+            TodoListId = listId
+        });
+    
+        var result = await this._controller.Update(1, new CompleteTodoItemRequest());
+        var status = result as ObjectResult;
+        Assert.NotNull(status);
+        Assert.Equal(200, status.StatusCode);
+        var json = status.Value as JsonResult;
+        Assert.NotNull(json);
+        var response = json.Value as TodoItemResponse;
+        
+        Assert.NotNull(response);
+        Assert.Equal(label, response.Label);
+        Assert.Equal(id, response.Id);
+        Assert.Equal(isArchived, response.IsArchived);
+        Assert.Equal(isCompleted, response.IsCompleted);
+        Assert.Equal(listId, response.TodoListId);
+    }
+    
+    [Theory]
+    [InlineData(1, 3, "test", false, true)]
+    [InlineData(2, 4,  "blub", true, true)]
+    [InlineData(1, 5, "test", false, false)]
+    [InlineData(2, 2,  "blub", true, false)]
     public async void Archive_Success(int id, int listId, string label, bool isArchived, bool isCompleted)
     {
         this._handler.Setup(x => x.Archive(1)).Returns(new TodoItem()

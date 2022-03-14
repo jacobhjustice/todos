@@ -10,9 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.Repositories/IReadOnlyTodoItemRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Repositories/IReadOnlyTodoItemRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.Repositories/TodoItemRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Repositories/TodoItemRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todos.Repositories/TodoListRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Repositories/TodoListRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todos-example.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/todos-example.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +176,7 @@
       <workItem from="1646876945802" duration="28147000" />
       <workItem from="1646978059434" duration="3860000" />
       <workItem from="1647190198657" duration="2638000" />
-      <workItem from="1647193223905" duration="1048000" />
+      <workItem from="1647193223905" duration="1785000" />
     </task>
     <servers />
   </component>

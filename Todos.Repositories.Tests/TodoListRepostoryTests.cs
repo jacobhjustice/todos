@@ -9,7 +9,7 @@ using Xunit;
 
 namespace Todos.Repositories.Tests;
 
-public class UnitTest1
+public class TodoListRepositoryTests
 {
     private (TodoListRepository, TodoContext) SetupData()
     {

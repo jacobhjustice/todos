@@ -18,11 +18,18 @@ builder.Services.AddDbContext<TodoContext>(options =>
 builder.Services.AddControllers();
 
 builder.Services.AddTransient<IValidator<TodoList>, TodoListValidator>();
+builder.Services.AddTransient<IValidator<TodoItem>, TodoItemValidator>();
+
 builder.Services.AddTransient<IHandler<TodoList, TodoListRequest>, TodoListHandler>();
+builder.Services.AddTransient<IHandler<TodoItem, TodoItemRequest>, TodoItemHandler>();
+builder.Services.AddTransient<ITodoItemHandler, TodoItemHandler>();
+
 builder.Services.AddTransient<IReadOnlyRepository<TodoItem>, TodoItemRepository>();
-builder.Services.AddTransient<IReadOnlyRepository<TodoItem>, TodoItemRepository>();
+builder.Services.AddTransient<IReadOnlyTodoItemRepository, TodoItemRepository>();
 builder.Services.AddTransient<IWriteOnlyRepository<TodoItem>, TodoItemRepository>();
+
 builder.Services.AddTransient<IReadOnlyRepository<TodoList>, TodoListRepository>();
+builder.Services.AddTransient<IReadOnlyTodoListRepository, TodoListRepository>();
 builder.Services.AddTransient<IWriteOnlyRepository<TodoList>, TodoListRepository>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

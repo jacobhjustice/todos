@@ -75,4 +75,24 @@ public class TodoItemRepositoryTests
             Assert.Equal(expectedIds[i], results[i].Id);
         }
     }
+    
+    [Theory]
+    [InlineData("1", 1)]
+    [InlineData("2", 2)]
+    [InlineData("derp", null)]
+
+    public void Get_ByLabel(string lookupLabel, int? expectedId)
+    {
+        var (repo, ctx) = this.SetupData();
+        var result = repo.Get(lookupLabel);
+        if (expectedId.HasValue)
+        {
+            Assert.NotNull(result);
+            Assert.Equal(expectedId, result.Id);
+        }
+        else
+        {
+            Assert.Null(result);
+        }
+    }
 }

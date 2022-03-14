@@ -1,10 +1,7 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/Users/jacobjustice/Library/Caches/JetBrains/Rider2021.3/resharper-host/temp/Rider/vAny/CoverageData/_todos-example.478454245/Snapshot/snapshot.utdcvr</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2128b50c_002D9dcf_002D4228_002D9278_002Dfa2ea297cef7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Validate_Failure_Complete_BadCompletionState" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::E9F3E262-4294-4E34-BC4E-13E5A3F55BB6::net6.0::Todos.Validations.Tests.TodoItemValidatorTests.Validate_Failure_Complete_BadCompletionState&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::E9F3E262-4294-4E34-BC4E-13E5A3F55BB6::net6.0::Todos.Validations.Tests.TodoItemValidatorTests.Validate_Complete_Failure_IdNotFound&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::E9F3E262-4294-4E34-BC4E-13E5A3F55BB6::net6.0::Todos.Validations.Tests.TodoItemValidatorTests.Validate_Success_Complete&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
+  &lt;Solution /&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=24ab1b96_002D2b59_002D4a48_002Dbfce_002Dc2053dde32af/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Post_Success" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
