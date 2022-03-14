@@ -32,11 +32,11 @@ public class TodoItemController : ControllerBase
         }
         catch (ArgumentNullException e)
         {
-            return StatusCode(StatusCodes.Status400BadRequest, e);
+            return StatusCode(StatusCodes.Status400BadRequest, e.ToString());
         }
         catch (Exception e)
         {
-            return StatusCode(StatusCodes.Status500InternalServerError, e);
+            return StatusCode(StatusCodes.Status500InternalServerError, e.ToString());
         }
     }
     
@@ -51,11 +51,11 @@ public class TodoItemController : ControllerBase
         }
         catch (ArgumentNullException e)
         {
-            return StatusCode(StatusCodes.Status400BadRequest, e);
+            return StatusCode(StatusCodes.Status400BadRequest, e.ToString());
         }
         catch (Exception e)
         {
-            return StatusCode(StatusCodes.Status500InternalServerError, e);
+            return StatusCode(StatusCodes.Status500InternalServerError, e.ToString());
         }
     }
     
@@ -65,12 +65,16 @@ public class TodoItemController : ControllerBase
         try
         {
             var results = this._handler.Get(id, includeArchived);
+            if (results == null)
+            {
+                return StatusCode(StatusCodes.Status404NotFound);
+            }
             var ret = new TodoItemResponse(results);
             return StatusCode(StatusCodes.Status200OK, new JsonResult(ret));
         }
         catch (Exception e)
         {
-            return StatusCode(StatusCodes.Status500InternalServerError, e);
+            return StatusCode(StatusCodes.Status500InternalServerError, e.ToString());
         }
     }
     
@@ -85,7 +89,7 @@ public class TodoItemController : ControllerBase
         }
         catch (Exception e)
         {
-            return StatusCode(StatusCodes.Status500InternalServerError, e);
+            return StatusCode(StatusCodes.Status500InternalServerError, e.ToString());
         }
     }
     
@@ -100,7 +104,7 @@ public class TodoItemController : ControllerBase
         }
         catch (Exception e)
         {
-            return StatusCode(StatusCodes.Status500InternalServerError, e);
+            return StatusCode(StatusCodes.Status500InternalServerError, e.ToString());
         }
     }
     
@@ -115,7 +119,7 @@ public class TodoItemController : ControllerBase
         }
         catch (Exception e)
         {
-            return StatusCode(StatusCodes.Status500InternalServerError, e);
+            return StatusCode(StatusCodes.Status500InternalServerError, e.ToString());
         }
     }
 }

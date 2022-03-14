@@ -34,7 +34,8 @@ public class TodoItemHandler : ITodoItemHandler
 
         var item = new TodoItem
         {
-            Label = req.Label
+            Label = req.Label,
+            TodoListId = req.ListId
         };
 
         var results = this._validator.Validate(item, options => options.IncludeRuleSets(Rulesets.CREATE));

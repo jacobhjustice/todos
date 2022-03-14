@@ -31,11 +31,11 @@ public class TodoListController : ControllerBase
         }
         catch (ArgumentNullException e)
         {
-            return StatusCode(StatusCodes.Status400BadRequest, e);
+            return StatusCode(StatusCodes.Status400BadRequest, e.ToString());
         }
         catch (Exception e)
         {
-            return StatusCode(StatusCodes.Status500InternalServerError, e);
+            return StatusCode(StatusCodes.Status500InternalServerError, e.ToString());
         }
     }
     
@@ -50,11 +50,11 @@ public class TodoListController : ControllerBase
         }
         catch (ArgumentNullException e)
         {
-            return StatusCode(StatusCodes.Status400BadRequest, e);
+            return StatusCode(StatusCodes.Status400BadRequest, e.ToString());
         }
         catch (Exception e)
         {
-            return StatusCode(StatusCodes.Status500InternalServerError, e);
+            return StatusCode(StatusCodes.Status500InternalServerError, e.ToString());
         }
     }
     
@@ -64,12 +64,16 @@ public class TodoListController : ControllerBase
         try
         {
             var results = this._handler.Get(id, includeArchived);
+            if (results == null)
+            {
+                return StatusCode(StatusCodes.Status404NotFound);
+            }
             var ret = new TodoListResponse(results);
             return StatusCode(StatusCodes.Status200OK, new JsonResult(ret));
         }
         catch (Exception e)
         {
-            return StatusCode(StatusCodes.Status500InternalServerError, e);
+            return StatusCode(StatusCodes.Status500InternalServerError, e.ToString());
         }
     }
     
@@ -84,7 +88,7 @@ public class TodoListController : ControllerBase
         }
         catch (Exception e)
         {
-            return StatusCode(StatusCodes.Status500InternalServerError, e);
+            return StatusCode(StatusCodes.Status500InternalServerError, e.ToString());
         }
     }
     
@@ -99,7 +103,7 @@ public class TodoListController : ControllerBase
         }
         catch (Exception e)
         {
-            return StatusCode(StatusCodes.Status500InternalServerError, e);
+            return StatusCode(StatusCodes.Status500InternalServerError, e.ToString());
         }
     }
 }

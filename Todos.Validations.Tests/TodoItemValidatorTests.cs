@@ -141,23 +141,7 @@ public class TodoItemValidatorTests
         Assert.InRange(result.Errors.Count, 1, 1);
         Assert.Equal("each TodoItem must have a label", result.Errors[0].ErrorMessage);
     }
-    
-    [Theory]
-    [InlineData(true, true)]
-    [InlineData(false, false)]
 
-    public void Validate_Failure_Complete_BadCompletionState(bool dataComplete, bool requestComplete)
-    {
-        this._repository.Setup(x => x.Get(It.IsAny<int>(), false))
-            .Returns(new TodoItem{CompletedAt = dataComplete ? DateTime.Now :  null});
-
-        var result = this._validator.Validate(new TodoItem{ Label = "123", Id = 3, CompletedAt = requestComplete ? DateTime.Now : null}, options => options.IncludeRuleSets(TodoItemRulesets.COMPLETE));
-        
-        Assert.False(result.IsValid);
-        Assert.InRange(result.Errors.Count, 1, 1);
-        Assert.Equal("cannot set TodoItem completion to current completion state", result.Errors[0].ErrorMessage);
-    }
-    
     [Fact]
     public void Validate_Complete_Failure_IdNotFound()
     {
@@ -171,16 +155,13 @@ public class TodoItemValidatorTests
         Assert.Equal("TodoItem must exist and not be archived", result.Errors[0].ErrorMessage);
     }
     
-    [Theory]
-    [InlineData(true, false)]
-    [InlineData(false, true)]
-
-    public void Validate_Success_Complete(bool dataComplete, bool requestComplete)
+    [Fact]
+    public void Validate_Complete_Success()
     {
         this._repository.Setup(x => x.Get(It.IsAny<int>(), false))
-            .Returns(new TodoItem{CompletedAt = dataComplete ? DateTime.Now :  null});
+            .Returns(new TodoItem{CompletedAt =  DateTime.Now});
 
-        var result = this._validator.Validate(new TodoItem{ Label = "123", Id = 3, CompletedAt = requestComplete ? DateTime.Now : null}, options => options.IncludeRuleSets(TodoItemRulesets.COMPLETE));
+        var result = this._validator.Validate(new TodoItem{ Label = "123", Id = 3, CompletedAt =  null}, options => options.IncludeRuleSets(TodoItemRulesets.COMPLETE));
         
         Assert.True(result.IsValid);
     }

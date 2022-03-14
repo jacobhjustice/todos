@@ -10,7 +10,13 @@
   <component name="ChangeListManager">
     <list default="true" id="14a385ae-faf3-46a5-b679-63cefbbba6e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todos-example/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todos-example.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/todos-example.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoItemHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoItemHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API/Controllers/TodoItemController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Controllers/TodoItemController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.DTOs/Requests/TodoItemRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.DTOs/Requests/TodoItemRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Validations.Tests/TodoItemValidatorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Validations.Tests/TodoItemValidatorTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todos.Validations/TodoItemValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Todos.Validations/TodoItemValidator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,12 +182,86 @@
       <workItem from="1646876945802" duration="28147000" />
       <workItem from="1646978059434" duration="3860000" />
       <workItem from="1647190198657" duration="2638000" />
-      <workItem from="1647193223905" duration="1785000" />
+      <workItem from="1647193223905" duration="4304000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnitTestsCoverage.Settings">
+    <option name="coveragePercentColumnWidth" value="135" />
+    <option name="sortOrder" value="DESCENDING" />
+    <option name="sortedColumn" value="1" />
+    <option name="symbolColumnWidth" value="68" />
+    <coverage-tree-state>
+      <expand>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 83% 265/1563" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 83% 265/1563" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Todos.DTOs 95% 2/42" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 83% 265/1563" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Todos.DTOs 95% 2/42" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Todos.DTOs 95% 2/42" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 83% 265/1563" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Todos.Repositories 83% 6/35" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 83% 265/1563" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Todos.Repositories 83% 6/35" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Todos.Repositories 83% 6/35" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 83% 265/1563" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Todos.Repositories 83% 6/35" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Todos.Repositories 83% 6/35" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TodoItemRepository 77% 6/26" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 83% 265/1563" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Todos.Utils 71% 31/108" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 83% 265/1563" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Todos.Utils 71% 31/108" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Todos.Utils 71% 31/108" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 83% 265/1563" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Todos.Utils 71% 31/108" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Todos.Utils 71% 31/108" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Query 100% 0/10" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 83% 265/1563" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Todos.Utils 71% 31/108" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Todos.Utils 71% 31/108" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Data 68% 31/98" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 83% 265/1563" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Todos.Models 23% 116/150" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+      </expand>
+      <select />
+    </coverage-tree-state>
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
@@ -245,60 +325,6 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs</url>
-          <line>110</line>
-          <properties documentPath="$PROJECT_DIR$/Todos.Utils/Data/ReadWriteRepository.cs" initialLine="110" containingFunctionPresentation="method 'BeginDatabaseTransaction'">
-            <startOffsets>
-              <option value="3439" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3453" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs</url>
-          <line>38</line>
-          <properties documentPath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs" initialLine="36" containingFunctionPresentation="method 'Create'">
-            <startOffsets>
-              <option value="1194" />
-              <option value="1250" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1292" />
-              <option value="1290" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Todos.Validations/TodoListValidator.cs</url>
-          <line>47</line>
-          <properties documentPath="$PROJECT_DIR$/Todos.Validations/TodoListValidator.cs" initialLine="47" containingFunctionPresentation="method 'NotExist'">
-            <startOffsets>
-              <option value="1368" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1411" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs</url>
-          <line>98</line>
-          <properties documentPath="$PROJECT_DIR$/Todos.API.Logic/Handlers/TodoListHandler.cs" initialLine="98" containingFunctionPresentation="method 'Archive'">
-            <startOffsets>
-              <option value="3198" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3247" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Todos.API.Tests/Controllers/TodoListControllerTests.cs</url>
           <line>161</line>
           <properties documentPath="$PROJECT_DIR$/Todos.API.Tests/Controllers/TodoListControllerTests.cs" initialLine="80" containingFunctionPresentation="method 'Get_Success'">
@@ -325,17 +351,17 @@
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Todos.Validations/TodoItemValidator.cs</url>
-          <line>68</line>
-          <properties documentPath="$PROJECT_DIR$/Todos.Validations/TodoItemValidator.cs" initialLine="68" containingFunctionPresentation="method 'CompletionStateIsNotCurrent'">
+          <url>file://$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs</url>
+          <line>37</line>
+          <properties documentPath="$PROJECT_DIR$/Todos.API/Controllers/TodoListController.cs" initialLine="37" containingFunctionPresentation="method 'Post'">
             <startOffsets>
-              <option value="2083" />
+              <option value="1109" />
             </startOffsets>
             <endOffsets>
-              <option value="2098" />
+              <option value="1183" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="27" />
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <breakpoint enabled="true" type="DotNet Exception Breakpoints">
           <properties exception="System.NotSupportedException" isInternal="false" displayValue="NotSupportedException" namespaceName="System">

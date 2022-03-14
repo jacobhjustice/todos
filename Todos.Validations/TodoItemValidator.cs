@@ -21,10 +21,6 @@ public class TodoItemValidator: AbstractValidator<TodoItem>
         
         RuleSet(TodoItemRulesets.COMPLETE, () =>
         {
-            RuleFor(x => x)
-                .Must(this.CompletionStateIsNotCurrent)
-                .WithMessage("cannot set TodoItem completion to current completion state");
-            
             RuleFor(x => x.Id)
                 .Must(this.NotArchived)
                 .WithMessage("TodoItem must exist and not be archived");
@@ -60,20 +56,7 @@ public class TodoItemValidator: AbstractValidator<TodoItem>
     {
         return this._repository.Get(label) == null;
     }
-    
-    public bool CompletionStateIsNotCurrent(TodoItem item)
-    {
-        var td = this._repository.Get(item.Id, false);
-        
-        // Return true since this case is already covered
-        if (td == null)
-        {
-            return true;
-        }
 
-        return item.CompletedAt.HasValue ? !td.CompletedAt.HasValue : td.CompletedAt.HasValue;
-    }
-    
     public bool NotArchived(int id)
     {
         return this._repository.Get(id, false) != null;
