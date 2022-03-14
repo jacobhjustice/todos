@@ -21,7 +21,7 @@
 - Todos.Utils: The set of utility methods and custom boilerplate code the API uses 
   - Note: Nothing in this project should be Todo domain specific
   - Note: These would ideally be moved to NuGet packages eventually
-  - 
+  
 ## Setup
 1) Modify appsettings.json to provide a connection string to local sql server
 2) Run the app (it will automatically run migrations and generate the database)
