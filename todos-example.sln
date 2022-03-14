@@ -1,16 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todos.api", "todos.api\todos.api.csproj", "{E5434334-55E4-44A1-BFDC-328548E90340}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.API", "Todos.API\Todos.API.csproj", "{E5434334-55E4-44A1-BFDC-328548E90340}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todos.models", "todos.models\todos.models.csproj", "{BD20605F-7A21-4DF7-AA0A-D4707A8EDB10}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.Models", "Todos.Models\Todos.Models.csproj", "{BD20605F-7A21-4DF7-AA0A-D4707A8EDB10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todos.validation", "todos.validation\todos.validation.csproj", "{EAAFAFB4-65DE-416D-9E9F-A97BDB54FD7C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.Validations", "Todos.Validations\Todos.Validations.csproj", "{EAAFAFB4-65DE-416D-9E9F-A97BDB54FD7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todos.dto", "todos.dto\todos.dto.csproj", "{004113FA-423C-489F-84D2-FF408A2460B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.DTOs", "Todos.DTOs\Todos.DTOs.csproj", "{004113FA-423C-489F-84D2-FF408A2460B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todos.repositories", "todos.repositories\todos.repositories.csproj", "{4BB6EA73-B217-4D59-B4C4-A3F305A9125F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.Repositories", "Todos.Repositories\Todos.Repositories.csproj", "{4BB6EA73-B217-4D59-B4C4-A3F305A9125F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todos.api.handlers", "todos.api.handlers\todos.api.handlers.csproj", "{B44C4B03-2040-41A8-B3FE-AE97D836882B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.API.Logic", "Todos.API.Logic\Todos.API.Logic.csproj", "{B44C4B03-2040-41A8-B3FE-AE97D836882B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.Utils", "Todos.Utils\Todos.Utils.csproj", "{B063D4E4-3EBB-4B04-A7D1-F4ADE10C67C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.Validations.Tests", "Todos.Validations.Tests\Todos.Validations.Tests.csproj", "{E9F3E262-4294-4E34-BC4E-13E5A3F55BB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.Utils.Tests", "Todos.Utils.Tests\Todos.Utils.Tests.csproj", "{34E6C0D8-A5F7-4EEE-88C0-832656B2394C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.API.Logic.Tests", "Todos.API.Logic.Tests\Todos.API.Logic.Tests.csproj", "{0975AA2A-9719-4FEC-A354-7C65EE9ADAF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.API.Tests", "Todos.API.Tests\Todos.API.Tests.csproj", "{A494F74C-3908-409F-B93E-0DA4314737B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todos.Repositories.Tests", "Todos.Repositories.Tests\Todos.Repositories.Tests.csproj", "{2E59FFB8-4EEF-47C4-99AB-F088592F7CC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,5 +54,29 @@ Global
 		{B44C4B03-2040-41A8-B3FE-AE97D836882B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B44C4B03-2040-41A8-B3FE-AE97D836882B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B44C4B03-2040-41A8-B3FE-AE97D836882B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B063D4E4-3EBB-4B04-A7D1-F4ADE10C67C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B063D4E4-3EBB-4B04-A7D1-F4ADE10C67C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B063D4E4-3EBB-4B04-A7D1-F4ADE10C67C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B063D4E4-3EBB-4B04-A7D1-F4ADE10C67C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9F3E262-4294-4E34-BC4E-13E5A3F55BB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9F3E262-4294-4E34-BC4E-13E5A3F55BB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9F3E262-4294-4E34-BC4E-13E5A3F55BB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9F3E262-4294-4E34-BC4E-13E5A3F55BB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34E6C0D8-A5F7-4EEE-88C0-832656B2394C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E6C0D8-A5F7-4EEE-88C0-832656B2394C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E6C0D8-A5F7-4EEE-88C0-832656B2394C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E6C0D8-A5F7-4EEE-88C0-832656B2394C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0975AA2A-9719-4FEC-A354-7C65EE9ADAF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0975AA2A-9719-4FEC-A354-7C65EE9ADAF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0975AA2A-9719-4FEC-A354-7C65EE9ADAF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0975AA2A-9719-4FEC-A354-7C65EE9ADAF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A494F74C-3908-409F-B93E-0DA4314737B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A494F74C-3908-409F-B93E-0DA4314737B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A494F74C-3908-409F-B93E-0DA4314737B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A494F74C-3908-409F-B93E-0DA4314737B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E59FFB8-4EEF-47C4-99AB-F088592F7CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E59FFB8-4EEF-47C4-99AB-F088592F7CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E59FFB8-4EEF-47C4-99AB-F088592F7CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E59FFB8-4EEF-47C4-99AB-F088592F7CC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

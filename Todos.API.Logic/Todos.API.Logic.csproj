@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>todos.api.handlers</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Todos.DTOs\Todos.DTOs.csproj" />
+      <ProjectReference Include="..\Todos.Models\Todos.Models.csproj" />
+      <ProjectReference Include="..\Todos.Repositories\Todos.Repositories.csproj" />
+      <ProjectReference Include="..\Todos.Utils\Todos.Utils.csproj" />
+      <ProjectReference Include="..\Todos.Validations\Todos.Validations.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="10.3.6" />
+    </ItemGroup>
+
+</Project>

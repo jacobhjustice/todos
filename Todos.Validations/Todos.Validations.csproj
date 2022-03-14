@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>todos.validation</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="10.3.6" />
+      <PackageReference Include="Moq" Version="4.17.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Todos.Models\Todos.Models.csproj" />
+      <ProjectReference Include="..\Todos.Repositories\Todos.Repositories.csproj" />
+      <ProjectReference Include="..\Todos.Utils.Tests\Todos.Utils.Tests.csproj" />
+    </ItemGroup>
+
+</Project>
