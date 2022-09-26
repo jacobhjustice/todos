@@ -2,6 +2,7 @@
 ## What?
 - A bare-bones todo api
 - An example of my current preferred dotnet architecture
+- A bare-bones todo api
 
 ## Overview
 - `Todos.API`: The entrypoint into the API
